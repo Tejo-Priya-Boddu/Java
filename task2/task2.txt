@@ -1,0 +1,73 @@
+1.The Enhanced For-Loop Array
+    Task: Create an integer array numbers with 5 random values already assigned (e.g., {12, 45, 7, 89, 23}).
+    Goal: Use the Enhanced For-Loop (For-Each loop) to iterate through the array and print every number on a new line.
+
+2.Proving String Immutability
+    Task: Create a String variable name = "Java";. Try to concatenate it by simply writing name.concat(" Programming"); on the next line without reassigning it to a variable.
+    Goal: Print name. Observe that it still prints "Java". Next, fix it by reassigning the result (name = name + " Programming";) and print it again to prove that Strings are immutable and require a new object for changes.
+
+3.Your First Blueprint 
+     Task: Create a new class named Car outside your main class. Give it two instance variables: String brand and int price.
+     Goal: Inside your main method, create an Object of the Car class using the new keyword. Assign values to its variables (e.g., brand = "Tesla", price = 50000) and print them out.
+
+4.The Method Overloader
+      Task: Create a Calculator class with three methods, all named add.
+            Method 1: Takes two int parameters and returns their sum.
+            Method 2: Takes three int parameters and returns their sum.
+            Method 3: Takes two double parameters and returns their sum.
+      Goal: Create an object of Calculator in main and call all three methods, storing and printing their returned results.
+
+5.StringBuffer Manipulator
+      Task: Create a StringBuffer object initialized with your first name (e.g., StringBuffer sb = new StringBuffer("John");).
+      Goal: Use inbuilt StringBuffer methods to:
+              .append() your last name to it.
+              .insert() a middle name at the correct index.
+              Print the final mutated string, along with its .length() and .capacity().
+
+6.Array Sum and Average
+       Task: Create an array of integers representing student marks: int marks[] = {55, 78, 92, 45, 88};.
+       Goal: Use a standard for loop to calculate the total sum of all the marks in the array. Once you have the sum, calculate the average (sum / length of array) and print both the total sum and the average.
+
+7.Array Element Finder
+        Task: Create an array of Strings containing 5 names. Create another String variable target = "Alice";.
+        Goal: Write a loop to search through the array. If the target name is found, print "Name found at index: [index number]" and use the break keyword to stop the loop.
+
+8.The Matrix Printer (2D Arrays)
+         Task: Create a 2-Dimensional integer array matrix[][] = new int[3][4];. Manually assign different values to specific indexes (e.g., matrix[0][1] = 5;).
+         Goal: Use Nested Loops (an outer loop for rows, inner loop for columns) to print the 2D array in a proper grid/matrix format.
+
+9.The Jagged Array Structure
+         Task: Create a Jagged Array (a 2D array where the rows have different numbers of columns).
+                 Row 0: 3 columns
+                 Row 1: 4 columns
+                 Row 2: 2 columns
+          Goal: Populate it with random numbers (you can use (int)(Math.random() * 10) to generate them like Telusko did, or hardcode them). Print the jagged array using a nested Enhanced For-Loop.
+
+10.Array of Objects
+          Task: Create a Student class with instance variables rollNo, name, and marks.
+          Goal: 1. In main, create 3 different Student objects and assign data to them.
+                     2. Create an Array of Students: Student students[] = new Student[3];
+                     3. Put your 3 objects inside this array.
+                    4. Loop through the students array and print the name of only the students who scored more than 50 marks.
+
+
+11.The Palindrome Array Filter
+         Task: Create an array of Strings containing a mix of random words and palindromes: String[] words = {"radar", "java", "level", "programming", "civic"};
+         Goal: Loop through this array. For each word, use StringBuffer to reverse it. If the original word is equal to the reversed word, print: "[word] is a Palindrome".
+
+12.The Matrix Transposer 
+         Task: Create a 2D integer array (Matrix A) with 3 rows and 2 columns:
+                   int[][] matrixA = {
+                           {1, 2},
+                           {3, 4},
+                           {5, 6}
+                   };
+         Goal: Create a new 2D array (Matrix B) that is the transpose of Matrix A. This means Matrix B should have 2 rows and 3 columns, flipping the rows into columns. Finally, print Matrix B in a grid format.
+
+13.The Valedictorian Finder
+             Task: Create a Student class. Give it two instance variables: String name and an integer array int[] marks (to hold marks for 3 subjects).
+              Goal: 1. Inside the Student class, create a method public int calculateTotal() that loops through the student's marks array, adds them up, and returns the total.
+                      2. Inside your main class, create an Array of 3 Students.
+                      3. Initialize each student with a name and an array of 3 random marks.
+                     4. Loop through the array of students, call calculateTotal() for each, and find the student with the highest total score. Print the name and total score of that top student.
+

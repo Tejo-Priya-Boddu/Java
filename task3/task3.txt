@@ -1,0 +1,77 @@
+​1. The Static Object Counter
+​Task: Create a class named Player. Give it a static int playerCount = 0;. Inside the constructor of Player, increment playerCount by 1.
+​Goal: In your main method, create 3 different Player objects. Print the playerCount using the class name (Player.playerCount). This proves that static variables are shared across all objects.
+
+​2. The Secure Bank Vault 
+​Task: Create a BankAccount class. Declare a private double balance.
+​Goal: Write a public getter method to read the balance, and a public setter method to deposit money. In the setter, write an if condition so that it only updates the balance if the deposit amount is greater than 0. Test this in your main method.
+
+​3. The Constructor Overloader
+​Task: Create a Book class with variables title and author.
+​Goal: Create two constructors. One default constructor that assigns "Unknown Title" and "Unknown Author". A second parameterized constructor that accepts and sets both values. Create two objects (one with each constructor) and print their details.
+
+
+​4. The this Keyword Shadowing
+​Task: Create a Laptop class with an instance variable String model.
+​Goal: Create a setter method public void setModel(String model). Use the exact same variable name model for the parameter. Inside the method, use the this keyword to resolve the naming conflict and assign the parameter value to the instance variable.
+
+
+​5. The Super Call in Constructors
+​Task: Create a Vehicle class with a parameterized constructor that takes a String brand and prints it.
+​Goal: Create a Car class that extends Vehicle. Write a constructor for Car. Inside the Car constructor, use the super("Toyota") keyword as the very first line to trigger the parent class's constructor.
+
+
+​6. Method Overriding Basics
+​Task: Create a Shape class with a method draw() that prints "Drawing a generic shape".
+​Goal: Create two subclasses: Circle and Triangle. Override the draw() method in both subclasses to print "Drawing a Circle" and "Drawing a Triangle" respectively. Call all three methods from main using their respective objects.
+
+​7. Anonymous Object Execution
+​Task: Create a TaskRunner class with a method executeTask() that prints "Task is running...".
+​Goal: In your main method, call executeTask() without creating a reference variable. Use an Anonymous Object directly (e.g., new TaskRunner()...).
+
+​
+​8. Dynamic Method Dispatch 
+​Task: Use the Shape, Circle, and Triangle classes from Task 6.
+​Goal: In your main method, create a reference variable of the parent class: Shape s;.
+​Assign it a circle object: s = new Circle(); and call s.draw().
+​Reassign the exact same reference to a triangle object: s = new Triangle(); and call s.draw().
+This perfectly demonstrates how the same reference changes behavior at runtime depending on the object it holds.
+
+
+​9. The Triple Variable Conflict
+​Task: Create a Parent class with an instance variable int x = 10;. Create a Child class that extends Parent and has its own instance variable int x = 20;.
+​Goal: Inside the Child class, create a method showValues(). Inside this method, create a local variable int x = 30;. Print all three values of x strictly from within this method:
+​Print the local x (should be 30).
+​Print the child instance x (should be 20) using this.
+​Print the parent instance x (should be 10) using super.
+
+​10. The Zoo Simulator
+​Task: 1. Create a base class Animal with a method makeSound().
+2. Create subclasses Dog and Cat that override makeSound().
+3. Create a separate Zoo class. Inside Zoo, write a method public void feedAnimal(Animal a) that accepts the parent reference. Inside this method, call a.makeSound().
+​Goal: In your main method, pass a new Dog() object and a new Cat() object into the feedAnimal() method. Watch how the single feedAnimal method adapts to whatever specific animal you pass it.
+
+1​1. The RPG Inventory System 
+​The Scenario: You are building a simple inventory system for a role-playing game.
+​
+​The Challenge: In your main method, create an Array of Items: Item[] inventory = new Item[3];.
+ Fill this array with one of each subclass object (Upcasting). 
+Finally, write a for loop that iterates through the inventory array and calls useItem() on each one.
+​
+
+1​2. The Corporate Ladder 
+​The Scenario: You need to pass data securely up a multi-level inheritance chain without breaking encapsulation.
+​The Challenge: You are not allowed to use default (empty) constructors. When you say new Manager("Alice", 101, 5); in your main method, 
+you must use the super() keyword in the Manager constructor to pass the name and ID up to the Employee constructor,
+ which must then use super() to pass the name up to the Person constructor. 
+Write a printDetails() method in Manager to print all three variables
+(you will need getters in the parent classes since the variables are private!).
+
+
+1​3. The Secure String Analyzer 
+​The Scenario: You are building a utility tool that analyzes text, similar to the Math class, 
+meaning you shouldn't need to create an object to use it.
+​The Challenge: 1. Add a private static int usageCount = 0; to track how many times the tool is used.
+2. Write a public static void analyze(String text) method. Inside this method, increment the usageCount.
+3. The method must convert the string to a character array (using .toCharArray()), loop through it, and count exactly how many vowels (a, e, i, o, u) are in the string. Print the vowel count and the current usageCount.
+4. Call this method directly from main using StringAnalyzer.analyze("Object Oriented Programming"); multiple times.
