@@ -1,0 +1,51 @@
+Profile Printer
+   Task: Create a class. Inside the main method, create variables to store your Name (String), Age (int), and Height (double/float).
+   Goal: Print them in a single sentence (e.g., "My name is John, I am 25 years old and 5.9 feet tall.").
+
+Type Casting Practice
+   Task: Create a double variable with a value like 9.99.
+   Goal: Cast it to an int and print the result. Observe how the decimal part is truncated (lost).
+
+Simple Swapper
+   Task: Create two integer variables, a = 10 and b = 20.
+   Goal: Swap their values so that a becomes 20 and b becomes 10. Print the values before and after swapping.
+
+Odd or Even (If-Else)
+   Task: Create a variable int num = 15;.
+   Goal: Write a program using if-else to check if the number is Even or Odd and print the result.
+
+Max of Three Numbers
+   Task: Create three variables x, y, and z with different values.
+   Goal: Use if-else-if statements to find and print the largest of the three numbers.
+
+Grade Calculator (Switch Case)
+   Task: Create a char variable grade (e.g., 'A', 'B', 'C', 'F').
+   Goal: Use a Switch Statement to print a remark based on the grade:
+   
+Pass or Fail (Ternary Operator)
+   Task: Create a variable marks = 45;.
+   Goal: Use the Ternary Operator (? :) to verify if marks are greater than 40. If yes, assign "Pass" to a string variable, otherwise "Fail". Print the string.
+
+Sum of First N Numbers
+    Task: Create a variable n = 10.
+    Goal: Use a While Loop or For Loop to calculate the sum of numbers from 1 to n (1 + 2 + 3 + ... + 10) and print the total.
+
+Factorial Finder
+    Task: Create a variable num = 5.
+    Goal: Calculate the factorial of num using a For Loop. (Factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120).
+
+Pattern Printing (Nested Loops)
+    Task: Use Nested Loops (a loop inside a loop) to print a box of stars.
+    Goal: Print the following pattern for a size of 4x4
+
+Prime Numbers in a Range
+    Task: Create two variables, start = 10 and end = 50.
+    Goal: Print all the Prime Numbers between this range.
+
+The Fibonacci Sequence
+    Task: Create a variable count = 10.
+    Goal: Print the first 10 numbers of the Fibonacci series.
+
+The Diamond Pattern
+    Task: Create a variable size = 5 (this represents the number of rows for the top half).
+    Goal: Print a diamond shape using stars (*).
